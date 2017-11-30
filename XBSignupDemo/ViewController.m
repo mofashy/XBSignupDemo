@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "XBSignupViewController.h"
 
 @interface ViewController ()
 
@@ -25,5 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)pushAction:(id)sender {
+    [self presentViewController:[[XBSignupViewController alloc] init] animated:YES completion:nil];
+}
 
 @end
